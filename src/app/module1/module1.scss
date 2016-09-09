@@ -1,0 +1,14 @@
+my-module1 {
+  background-color: azure;
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  & h1 {
+    color: hotpink;
+  }
+
+  article {
+    border: 1px solid black;
+  }
+}

@@ -1,1 +1,32 @@
 <h1>Hello World</h1>
+<p>My name is {{name}}</p>
+<my-module1 [myName]="name">
+    <div>
+        <h2>Hello!</h2>
+        <p>World!</p>
+    </div>
+</my-module1>
+
+<my-module1>
+    <h3>Baaaaaah!</h3>
+</my-module1>
+
+<my-module2></my-module2>
+
+<my-event-binding [myName]="name" (customBtnClick)="onCustomBtnClick($event)">
+
+</my-event-binding>
+
+<my-twoway-binding>
+
+</my-twoway-binding>
+
+<button (click)="delete = true">Click to delete lifecycle module</button>
+<button (click)="test = 'changed value'">Click to change</button>
+<button (click)="boundValue = 2000">Click to change binding</button>
+<my-lifecycle *ngIf="!delete" [bindable]="boundValue">
+    <p js-wants #boundContent>{{test}}</p>
+    <p js-wants >fsfsdfef</p>
+</my-lifecycle>
+
+<my-parent></my-parent>
